@@ -1,0 +1,260 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    line-height:1.6;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 2rem;
+    background-color:#fff;
+}
+.logo a{
+    color:#333;
+    text-decoration:none;
+    font-size:2rem;
+    font-weight:bold;
+    font-style:normal;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+nav ul li{
+    margin-left:2em;
+}
+nav ul li a{
+    color:#333;
+    text-decoration:none;
+    font-size:1rem;
+    transition:color 0.3s ease;
+}
+nav ul li a:hover{
+    color:#666;
+}
+.main-pic{
+    text-align:center;
+}
+.main-pic .main-content h1{
+    font-size:5rem;
+}
+.main-content{
+    padding:3rem 1rem;
+    text-align:center;
+}
+.main-content h1{
+    font-size:2.5rem;
+    color:#28201B;
+    margin-bottom:1rem;
+    text-align:center;
+    font-style:normal;
+}
+.main-image img{
+    width:90%;
+    height:auto;
+    max-height:500px;
+    /* object-fit:cover; */
+    border-radius:15px;
+}
+.portfolio{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+    padding:2rem;
+}
+.portfolio-item{
+    text-align:left;
+    background:white;
+    padding:1rem;
+}
+
+.portfolio-item p{
+    color:#2E1F149E;
+
+}
+.portfolio-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    margin-bottom:1rem;
+    border-radius:10px;
+}
+.cont3{
+    display:flex;
+    justify-content:start;
+    margin-left:20px ;
+    margin:3rem 0;
+}
+.cont3 p{
+    text-align: left;
+    width: 50%;
+    font-size: 1.5rem;
+}
+.cont4{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding:2rem;
+}
+.contact{
+    font-size:2rem;
+    font-weight:bold;
+    font-style:normal;
+}
+.li-head{
+    font-weight: bold;
+}
+.cont4-div{
+    margin:1rem;
+    min-width:200px;
+}
+.cont4-div ul{
+    list-style:none;
+}
+.cont4-div ul li{
+    margin:0.5rem 0;
+}
+.cont5{
+    text-align:center;
+    padding:5rem;
+}
+.intouch{
+    margin-bottom:2rem;
+}
+.intouch input{
+    border-radius:5px;
+    border:none;
+    background-color:#7E4A2517;
+}
+.cont5 .btn{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.otp{
+    width:40px;
+    height:40px;
+    margin:0 5px;
+    text-align:center;
+}
+.submit, .skip{
+    width:40%;
+    min-width:30%;
+    padding:0.5rem 1.5rem;
+    margin:0.5rem;
+    cursor:pointer;
+    border-radius:16px;
+}
+.submit{
+    border:none;
+    background:#8B4513;
+    color:white
+}
+.skip{
+    border:none;
+    background-color:white;
+    color:#8B4513;
+}
+footer{
+    display:flex;
+    justify-content:space-between;
+    color:#2E1F149E;
+    padding:1rem;
+    text-align:center;
+}
+footer input{
+    border:1px solid gray;
+    background-color:white;
+    border-radius:8px;
+    padding:10px;
+}
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    nav ul{
+        flex-direction:column;
+        width:100%;
+        margin-top:1rem;
+        display:flex;
+    }
+    nav ul li{
+        margin:0.5rem 0;
+        width:100%;
+        border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+    nav ul li:last-child{
+        border-bottom:none;
+    }
+    .main-content h1{
+        font-size:2rem;
+    }
+    .portfolio{
+        grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+        gap:1.5rem;
+        padding:1.5rem;
+    }
+    .cont4{
+        flex-direction:column;
+        align-items:center;
+    }
+    .cont4-div{
+        width:100%;
+        text-align:center;
+        margin:1rem 0;
+    }
+    h1{
+        font-size:2rem;
+    }
+    h2{
+        font-size:1.75rem;
+    }
+    h3{
+        font-size:1.5rem;
+    }
+}
+@media screen and (max-width: 480px){
+    nav{
+        padding:1rem;
+    }
+    .logo a{
+        font-size:1.2rem;
+    }
+    .main-content h1{
+        font-size:1.5rem;
+    }
+    .portfolio{
+        grid-template-columns:1fr;
+        gap:1rem;
+        padding:1rem;
+    }
+    h1{
+        font-size:1.5rem;
+    }
+    h2{
+        font-size:1.25rem;
+    }
+    h3{
+        font-size:1.1rem;
+    }
+    .cont4-div{
+        padding:0 1rem;
+    }
+    .otp{
+        width:35px;
+        height:35px;
+        margin:0 3px;
+    }
+    .submit, .skip{
+        padding:0.4rem 1.2rem;
+        font-size:0.9rem;
+    }
+}
